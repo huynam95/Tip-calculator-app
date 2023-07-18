@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function Left({
   bill,
   onSetBill,
@@ -44,10 +42,6 @@ function Bill({ bill, onSetBill }) {
 }
 
 function Select({ tip, onSetTip, tipInput, setTipInput }) {
-  function handleTipInput(value) {
-    setTipInput(value);
-  }
-
   return (
     <div className="select-section">
       <p className="text">Select Tip %</p>
